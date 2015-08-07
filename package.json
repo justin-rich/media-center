@@ -1,0 +1,51 @@
+{
+  "name": "film-school",
+  "main": "display/index.html",
+  "author": "Justin Rich",
+  "version": "0.0.1",
+  "window": {
+    "title": "Film School",
+    "icon": "html/img/icon.png",
+    "show": false,
+    "toolbar": false,
+    "frame": false,
+    "resizable": false,
+    "fullscreen": true,
+    "position": "center",
+    "always-on-top": true,
+    "show_in_taskbar": true,
+    "width": 1920,
+    "height": 1080,
+    "min_width": 1024,
+    "min_height": 768,
+    "max_width": 1920,
+    "max_height": 1080
+  },
+  "webkit": {
+    "plugin": false,
+    "java": false,
+    "page-cache": false
+  },
+  "dependencies": {
+		"express" : "*",
+		"express-logger" : "*",
+		"morgan" : "*",
+		"socket.io" : "*",
+		"vlc-node" : "*"
+  },
+  "description": "Media Center Application",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://justinrich.com"
+  },
+  "keywords": ["webkit"],
+  "license": "ISC",
+  "bugs": {
+    "url": "http://justinrich.com"
+  },
+  "homepage": "http://justinrich.com"
+}

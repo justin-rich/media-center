@@ -1,0 +1,31 @@
+body {
+	background-color:#FFFFF2;
+	font-family: "Times New Roman", Times, serif;	
+
+	background-color:#F2E9D6;	
+	
+	margin:0;
+	padding:0;
+}
+
+.container {
+	margin-top:1em;
+	width:100%;
+	padding:0;
+	margin:0px 0px 0px 1em;
+}
+
+.img-holder {
+	height:350px;
+	text-align:center;
+}
+	
+.img-holder img {
+	max-height:335px;
+}
+
+.img-holder img.active {
+	border:2px solid #CC0000;
+	box-shadow: 10px 10px 5px #888888;
+}
+

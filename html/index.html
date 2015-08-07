@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MediaCenter">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Film School</title>				
+		
+		<!-- <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css"> -->
+		
+		<link rel="stylesheet" href="/css/bootstrap.css">
+		<link rel="stylesheet" href="/css/media-center.css">			
+		
+		<script src="/bower_components/angularjs/angular.min.js"></script>		
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>		
+		<script src="/bower_components/socket.io-client/socket.io.js"></script>								
+				
+		<script src="/js/media-center.js"></script>
+	</head>
+	
+	<body>
+		<div class="container" ng-controller="FileListControl">
+			<div class="row" >
+				
+			  <div class="img-holder col-lg-2 col-sm-3 col-xs-6" 
+						 id="file-{{ file.uuid }}" 
+						 ng-repeat="file in files">
+						 
+					<img src="/img/files/{{ file.uuid }}.jpg" 
+							 id="img-{{ file.uuid }}" 
+							 ng-class="{ active : file.uuid == fileSelected.uuid }" 
+							 ng-click="open(file.uuid)"
+							 class="thumbnail img-responsive">							 
+				</div>					
+								
+			</div>
+		</div>
+	</body>
+</html>
+

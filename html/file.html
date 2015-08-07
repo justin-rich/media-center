@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MediaCenter">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Film School</title>				
+
+		<!-- <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css"> -->
+
+		<link rel="stylesheet" href="/css/bootstrap.css">
+		<link rel="stylesheet" href="/css/media-center.css">			
+
+		<script src="/bower_components/angularjs/angular.min.js"></script>		
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>		
+		<script src="/bower_components/socket.io-client/socket.io.js"></script>								
+	
+		<script src="/js/media-center.js"></script>
+	</head>
+
+	<body>
+		<div class="container" ng-controller="FileListControl">
+								
+					<div class="row">
+						<div class="col-md-12 content-info">
+
+							<div class="row">
+
+								<div class="col-md-4">
+									<h1 class="content-title">{{ fileSelected.title }}</h1>
+									
+									<ul id="credits">
+										<li ng-repeat="credit in fileSelected.credits | limitTo:5:0">
+											<strong>{{ credit.credit }}</strong><br>
+											&nbsp;&nbsp;{{credit.value}}
+										</li>
+									</ul>								
+									<p class="file-body">
+										{{ fileSelected.synopsis }}
+									</p>
+								</div>		
+								
+								<div class="col-md-2">												
+									<img class="file-image" src="/img/files/{{ fileSelected.uuid }}.jpg" />
+								</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+				

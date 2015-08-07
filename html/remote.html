@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="remote-control">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Film School</title>				
+		
+		<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/remote.css">			
+		
+		<!-- Bower Plugins-->
+		<script src="/bower_components/angularjs/angular.min.js"></script>		
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="/bower_components/angular-gestures/gestures.min.js"></script>		
+		<script src="/bower_components/socket.io-client/socket.io.js"></script>					
+		<script src="/bower_components/hammerjs/hammer.min.js"></script>		
+							
+		<script src="/js/media-center-remote.js"></script>    
+	</head>
+	
+	<body>
+		<div class="container" ng-controller="RemoteController">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="gesture-box">
+						&nbsp;
+					</div>
+				</div>
+			</div>
+			
+			<!-- <div class="row" class="remote-ui-up">
+				<div class="col-md-12">
+					<span class="glyphicon glyphicon-menu-up" aria-hidden="true" ng-click="prev()" ></span>
+				</div>
+			</div>
+
+			<div class="row" class="remote-ui-down">
+				<div class="col-md-12">
+					<span class="glyphicon glyphicon-menu-down" aria-hidden="true" ng-click="next()"></span>
+				</div>
+			</div>
+
+			<div class="row" class="remote-ui-down">
+				<div class="col-md-12">
+					<span class="glyphicon glyphicon-play" aria-hidden="true" ng-click="select()"></span>
+				</div>
+			</div> -->
+		</div>
+		
+	</body>
+</html>

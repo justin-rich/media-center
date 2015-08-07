@@ -1,0 +1,23 @@
+{
+  "name": "Film School",
+  "version": "0.0.1",
+  "authors": [
+    "Justin Rich <justin@justinrich.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "latest",		
+    "angular-bootstrap": "latest",
+		"angular-gestures": "latest",
+		"socket.io-client": "latest",
+		"bootstrap": "latest",
+		"requirejs": "latest"
+  }
+}
